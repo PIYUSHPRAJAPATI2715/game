@@ -95,533 +95,539 @@ const SizedBox(height: 30,),
       children: [
 
         Stack(
-          children: [Container(
+          children: [Center(
+            child: Container(
 width: 300,
-          padding: const EdgeInsets.all(10),
-          decoration: BoxDecoration(
-          color: const Color(0xFF0a6e3a),
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color:  const Color(0xFFb99b49),width: 10),
-          boxShadow: const [
-          BoxShadow(
-          color: Color(0xFFb99b49),
-          offset: Offset(0, 0), //(x,y)
-          blurRadius: 6.0,
-          ),
-          ],
-          ),
-                                 child: Column(
-                                   children: [
-                                     Row(
-                                       children: [
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+            color: const Color(0xFF0a6e3a),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color:  const Color(0xFFb99b49),width: 10),
+            boxShadow: const [
+            BoxShadow(
+            color: Color(0xFFb99b49),
+            offset: Offset(0, 0), //(x,y)
+            blurRadius: 6.0,
+            ),
+            ],
+            ),
+                                   child: Column(
+                                     children: [
+                                       Row(
+                                         children: [
 
-                                         Column(
-                                           children: [
+                                           Column(
+                                             children: [
 
-                                             RotatedBox(
-                                               quarterTurns: 1,
-                                               child: InkWell(
-                                                 onTap: (){
-                                                   showDialogueBlue(context);
-                                                 },
-                                                 child: Container(
-                                                   height: 210,
-                                                   width: 190,
-                                                   decoration: BoxDecoration(
-                                                     color: const Color(0xFF215177),
-                                                     borderRadius: BorderRadius.circular(10),
-                                                     border: Border.all(color:  const Color(0xFF1a4363),width: 3),
-                                                     boxShadow: const [
-                                                       BoxShadow(
-                                                         color: Color(0xFF1a4363),
-                                                         offset: Offset(1, 1), //(x,y)
-                                                         blurRadius: 1.0,
+                                               RotatedBox(
+                                                 quarterTurns: 1,
+                                                 child: InkWell(
+                                                   onTap: (){
+                                                     showDialogueBlue(context);
+                                                   },
+                                                   child: Container(
+                                                     height: 210,
+                                                     width: 190,
+                                                     decoration: BoxDecoration(
+                                                       color: const Color(0xFF215177),
+                                                       borderRadius: BorderRadius.circular(10),
+                                                       border: Border.all(color:  const Color(0xFF1a4363),width: 3),
+                                                       boxShadow: const [
+                                                         BoxShadow(
+                                                           color: Color(0xFF1a4363),
+                                                           offset: Offset(1, 1), //(x,y)
+                                                           blurRadius: 1.0,
+                                                         ),
+                                                       ],
+                                                     ),
+                                                     child: Column(children:  [
+                                                       Container(
+                                                         decoration: const BoxDecoration(
+                                                           color: Color(0xFF1a4363),
+                                                         ),
+                                                      child: Row(
+                                                        children: [
+                                                          const Icon(Icons.star_sharp,color: Color(0xFFff3fef),),
+                                                   SizedBox(width: 50,),
+                                                     Text('95493',
+                                                       style: GoogleFonts.poppins(
+                                                           color: Colors.white,
+                                                           fontSize: 15,
+
+                                                           fontWeight: FontWeight.w600 ),)
+                                                        ],
+                                                      ),
                                                        ),
-                                                     ],
+                                                       const SizedBox(
+                                                         height: 20,
+                                                       ),
+                                                       Text(
+                                                         "Dragon",
+                                                         style: GoogleFonts.poppins(
+                                                             color: const Color(0xFF3a6587),
+                                                             fontSize: 50,
+
+                                                             fontWeight: FontWeight.bold),
+                                                       ),
+                                                       const SizedBox(
+                                                         height: 25,
+                                                       ),
+                                                       Text(
+                                                         "2X",
+                                                         style: GoogleFonts.poppins(
+                                                             color: const Color(0xFF3a6587),
+                                                             fontSize: 50,
+                                                             fontWeight: FontWeight.bold),
+                                                       )
+                                                     ]),
                                                    ),
-                                                   child: Column(children:  [
-                                                     Container(
-                                                       decoration: const BoxDecoration(
-                                                         color: Color(0xFF1a4363),
-                                                       ),
-                                                    child: Row(
-                                                      children: [
-                                                        const Icon(Icons.star_sharp,color: Color(0xFFff3fef),),
-                                                 SizedBox(width: 50,),
-                                                   Text('95493',
-                                                     style: GoogleFonts.poppins(
-                                                         color: Colors.white,
-                                                         fontSize: 15,
-
-                                                         fontWeight: FontWeight.w600 ),)
-                                                      ],
-                                                    ),
-                                                     ),
-                                                     const SizedBox(
-                                                       height: 20,
-                                                     ),
-                                                     Text(
-                                                       "Dragon",
-                                                       style: GoogleFonts.poppins(
-                                                           color: const Color(0xFF3a6587),
-                                                           fontSize: 50,
-
-                                                           fontWeight: FontWeight.bold),
-                                                     ),
-                                                     const SizedBox(
-                                                       height: 25,
-                                                     ),
-                                                     Text(
-                                                       "2X",
-                                                       style: GoogleFonts.poppins(
-                                                           color: const Color(0xFF3a6587),
-                                                           fontSize: 50,
-                                                           fontWeight: FontWeight.bold),
-                                                     )
-                                                   ]),
                                                  ),
                                                ),
-                                             ),
-                                             const SizedBox(height: 10,),
-                                             RotatedBox(
-                                               quarterTurns: 1,
-                                               child: InkWell(
-                                                 onTap: (){
-                                                   showDialogueTie(context);
-                                                 },
-                                                 child: Container(
-                                                   height: 210,
-                                                   width: 170,
-                                                   decoration: BoxDecoration(
-                                                     color: const Color(0xFF1e9146),
-                                                     borderRadius: BorderRadius.circular(10),
-                                                     border: Border.all(color:  const Color(0xFF036822),width: 1),
-                                                     boxShadow: const [
-                                                       BoxShadow(
-                                                         color: Color(0xFF036822),
-                                                         offset: Offset(1, 1), //(x,y)
-                                                         blurRadius: 1.0,
-                                                       ),
-                                                     ],
-                                                   ),
-                                                   child: Column(children:  [
-                                                     Container(
-                                                       decoration:  BoxDecoration(
-                                                         borderRadius: BorderRadius.only(topLeft: Radius.circular(7),topRight: Radius.circular(7)),
-                                                         color: Color(0xFF01621f),
-                                                       ),
-                                                       child: Row(
-                                                         children: [
-                                                           const Icon(Icons.star_sharp,color: Color(0xFFd41f21),),
+                                               const SizedBox(height: 10,),
+                                               RotatedBox(
+                                                 quarterTurns: 1,
+                                                 child: InkWell(
+                                                   onTap: (){
+                                                     showDialogueTie(context);
+                                                   },
+                                                   child: Container(
+                                                     height: 210,
+                                                     width: 170,
+                                                     decoration: BoxDecoration(
+                                                       color: const Color(0xFF1e9146),
+                                                       borderRadius: BorderRadius.circular(10),
+                                                       border: Border.all(color:  const Color(0xFF036822),width: 1),
+                                                       boxShadow: const [
+                                                         BoxShadow(
+                                                           color: Color(0xFF036822),
+                                                           offset: Offset(1, 1), //(x,y)
+                                                           blurRadius: 1.0,
+                                                         ),
+                                                       ],
+                                                     ),
+                                                     child: Column(children:  [
+                                                       Container(
+                                                         decoration:  BoxDecoration(
+                                                           borderRadius: BorderRadius.only(topLeft: Radius.circular(7),topRight: Radius.circular(7)),
+                                                           color: Color(0xFF01621f),
+                                                         ),
+                                                         child: Row(
+                                                           children: [
+                                                             const Icon(Icons.star_sharp,color: Color(0xFFd41f21),),
 
-                                                           SizedBox(width: 50,),
-                                                           Center(
-                                                             child: Text('2210',
+                                                             SizedBox(width: 50,),
+                                                             Center(
+                                                               child: Text('2210',
+                                                                 style: GoogleFonts.poppins(
+                                                                     color: Colors.white,
+                                                                     fontSize: 15,
+
+                                                                     fontWeight: FontWeight.w600 ),),
+                                                             )
+                                                           ],
+                                                         ),
+                                                       ),
+                                                       const SizedBox(
+                                                         height: 20,
+                                                       ),
+                                                       Text(
+                                                         "Tie",
+                                                         style: GoogleFonts.poppins(
+                                                             color: const Color(0xFF4da86b),
+                                                             fontSize: 50,
+                                                             fontWeight: FontWeight.bold),
+                                                       ),
+                                                       const SizedBox(
+                                                         height: 30,
+                                                       ),
+                                                       Text(
+                                                         "9X",
+                                                         style: GoogleFonts.poppins(
+                                                             color: const Color(0xFF4da86b),
+                                                             fontSize: 50,
+                                                             fontWeight: FontWeight.bold),
+                                                       )
+                                                     ]),
+                                                   ),
+                                                 ),
+                                               ),
+                                               const SizedBox(height: 10,),
+                                               RotatedBox(
+                                                 quarterTurns: 1,
+                                                 child: InkWell(
+                                                   onTap: (){
+                                                     showDialogueRed(context);
+                                                   },
+                                                   child: Container(
+                                                     height: 210,
+                                                     width: 190,
+                                                     decoration: BoxDecoration(
+                                                       color: const Color(0xFF9b3b3c),
+                                                       borderRadius: BorderRadius.circular(10),
+                                                       border: Border.all(color:  const Color(0xFF8e1f20),width: 1),
+                                                       boxShadow: const [
+                                                         BoxShadow(
+                                                           color: Color(0xFF8e1f20),
+                                                           offset: Offset(1, 1), //(x,y)
+                                                           blurRadius: 1.0,
+                                                         ),
+                                                       ],
+                                                     ),
+                                                     child: Column(children:  [
+                                                       Container(
+                                                         decoration: const BoxDecoration(
+                                                           borderRadius: BorderRadius.only(topLeft: Radius.circular(7),topRight: Radius.circular(7)),
+                                                           color: Color(0xFF8f1e20),
+                                                         ),
+                                                         child: Row(
+                                                           children: [
+                                                             const Icon(Icons.star_sharp,color: Color(0xFFffd659),),
+                                                             SizedBox(width: 50,),
+                                                             Text('95493',
                                                                style: GoogleFonts.poppins(
                                                                    color: Colors.white,
                                                                    fontSize: 15,
 
-                                                                   fontWeight: FontWeight.w600 ),),
-                                                           )
-                                                         ],
+                                                                   fontWeight: FontWeight.w600 ),)
+                                                           ],
+                                                         ),
                                                        ),
-                                                     ),
-                                                     const SizedBox(
-                                                       height: 20,
-                                                     ),
-                                                     Text(
-                                                       "Tie",
-                                                       style: GoogleFonts.poppins(
-                                                           color: const Color(0xFF4da86b),
-                                                           fontSize: 50,
-                                                           fontWeight: FontWeight.bold),
-                                                     ),
-                                                     const SizedBox(
-                                                       height: 30,
-                                                     ),
-                                                     Text(
-                                                       "9X",
-                                                       style: GoogleFonts.poppins(
-                                                           color: const Color(0xFF4da86b),
-                                                           fontSize: 50,
-                                                           fontWeight: FontWeight.bold),
-                                                     )
-                                                   ]),
-                                                 ),
-                                               ),
-                                             ),
-                                             const SizedBox(height: 10,),
-                                             RotatedBox(
-                                               quarterTurns: 1,
-                                               child: InkWell(
-                                                 onTap: (){
-                                                   showDialogueRed(context);
-                                                 },
-                                                 child: Container(
-                                                   height: 210,
-                                                   width: 190,
-                                                   decoration: BoxDecoration(
-                                                     color: const Color(0xFF9b3b3c),
-                                                     borderRadius: BorderRadius.circular(10),
-                                                     border: Border.all(color:  const Color(0xFF8e1f20),width: 1),
-                                                     boxShadow: const [
-                                                       BoxShadow(
-                                                         color: Color(0xFF8e1f20),
-                                                         offset: Offset(1, 1), //(x,y)
-                                                         blurRadius: 1.0,
+                                                       const SizedBox(
+                                                         height: 20,
                                                        ),
-                                                     ],
-                                                   ),
-                                                   child: Column(children:  [
-                                                     Container(
-                                                       decoration: const BoxDecoration(
-                                                         borderRadius: BorderRadius.only(topLeft: Radius.circular(7),topRight: Radius.circular(7)),
-                                                         color: Color(0xFF8f1e20),
-                                                       ),
-                                                       child: Row(
-                                                         children: [
-                                                           const Icon(Icons.star_sharp,color: Color(0xFFffd659),),
-                                                           SizedBox(width: 50,),
-                                                           Text('95493',
-                                                             style: GoogleFonts.poppins(
-                                                                 color: Colors.white,
-                                                                 fontSize: 15,
+                                                       Text(
+                                                         "Tiger",
 
-                                                                 fontWeight: FontWeight.w600 ),)
-                                                         ],
-                                                       ),
-                                                     ),
-                                                     const SizedBox(
-                                                       height: 20,
-                                                     ),
-                                                     Text(
-                                                       "Tiger",
+                                                           style: GoogleFonts.poppins(
+                                                               color: const Color(0xFFa74f4e),
+                                                               fontSize: 50,
+                                                               fontWeight: FontWeight.bold)
 
+                                                       ),
+                                                       const SizedBox(
+                                                         height: 30,
+                                                       ),
+                                                       Text(
+                                                         "2X",
                                                          style: GoogleFonts.poppins(
                                                              color: const Color(0xFFa74f4e),
                                                              fontSize: 50,
-                                                             fontWeight: FontWeight.bold)
-
-                                                     ),
-                                                     const SizedBox(
-                                                       height: 30,
-                                                     ),
-                                                     Text(
-                                                       "2X",
-                                                       style: GoogleFonts.poppins(
-                                                           color: const Color(0xFFa74f4e),
-                                                           fontSize: 50,
-                                                           fontWeight: FontWeight.bold),
-                                                     )
-                                                   ]),
+                                                             fontWeight: FontWeight.bold),
+                                                       )
+                                                     ]),
+                                                   ),
                                                  ),
                                                ),
-                                             ),
-                                           ],
-                                         ),
-                             const SizedBox(width: 10,),
-                                RotatedBox(
-                                  quarterTurns: 1,
-                                  child: Container(
+                                             ],
+                                           ),
+                               const SizedBox(width: 10,),
+                                  RotatedBox(
+                                    quarterTurns: 1,
+                                    child: Container(
 
-                                    height: 40,
-                                    padding: const EdgeInsets.all(5),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xFF2b471d),
-                                      borderRadius: BorderRadius.circular(10),
-                                      border: Border.all(color:  const Color(0xFF38855a),width: 1),
+                                      height: 40,
+                                      padding: const EdgeInsets.all(5),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFF2b471d),
+                                        borderRadius: BorderRadius.circular(10),
+                                        border: Border.all(color:  const Color(0xFF38855a),width: 1),
 
-                                    ),
-                                    child: Row(
-                                      children: [
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFd41f21),
-                                            borderRadius: BorderRadius.circular(5)
-                                          ),
-                                        child: Text("P",
-                                        style: GoogleFonts.poppins(
-                                            color: Colors.white,
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold),),
-                                        ),
-                                         const SizedBox(width: 5,),
-                                            Container(
-                                              padding: const EdgeInsets.all(5),
-                                              decoration: BoxDecoration(
-                                                  color: const Color(0xFF0e7bc5),
-                                                  borderRadius: BorderRadius.circular(5)
-                                              ),
-                                              child: Text(" I ",
-                                                style: GoogleFonts.poppins(
-                                                    color: Colors.white,
-                                                    fontSize: 15,
-                                                    fontWeight: FontWeight.bold),),
-                                            ),
-                                        const SizedBox(width: 5,),
-                                            Container(
-                                              padding: const EdgeInsets.all(5),
-                                              decoration: BoxDecoration(
-                                                  color: const Color(0xFFd41f21),
-                                                  borderRadius: BorderRadius.circular(5)
-                                              ),
-                                              child: Text("Y",
-                                                style: GoogleFonts.poppins(
-                                                    color: Colors.white,
-                                                    fontSize: 15,
-                                                    fontWeight: FontWeight.bold),),
-                                            ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                              padding: const EdgeInsets.all(5),
-                                              decoration: BoxDecoration(
-                                                  color: const Color(0xFF0e7bc5),
-                                                  borderRadius: BorderRadius.circular(5)
-                                              ),
-                                              child: Text("U",
-                                                style: GoogleFonts.poppins(
-                                                    color: Colors.white,
-                                                    fontSize: 15,
-                                                    fontWeight: FontWeight.bold),),
-                                            ),
-                                        const SizedBox(width: 5,),
-                                            Container(
-                                              padding: const EdgeInsets.all(5),
-                                              decoration: BoxDecoration(
-                                                  color: const Color(0xFFd41f21),
-                                                  borderRadius: BorderRadius.circular(5)
-                                              ),
-                                              child: Text("S",
-                                                style: GoogleFonts.poppins(
-                                                    color: Colors.white,
-                                                    fontSize: 15,
-                                                    fontWeight: FontWeight.bold),),
-                                            ),
-                                        const SizedBox(width: 5,),
-                                            Container(
-                                              padding: const EdgeInsets.all(5),
-                                              decoration: BoxDecoration(
-                                                  color: const Color(0xFF0e7bc5),
-                                                  borderRadius: BorderRadius.circular(5)
-                                              ),
-                                              child: Text("H",
-                                                style: GoogleFonts.poppins(
-                                                    color: Colors.white,
-                                                    fontSize: 15,
-                                                    fontWeight: FontWeight.bold),),
-                                            ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
                                               color: const Color(0xFFd41f21),
                                               borderRadius: BorderRadius.circular(5)
-                                          ),
-                                          child: Text("K",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFF0e7bc5),
-                                              borderRadius: BorderRadius.circular(5)
-                                          ),
-                                          child: Text("U",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
-                                          ),
-                                          child: Text("M",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFF0e7bc5),
-                                              borderRadius: BorderRadius.circular(5)
-                                          ),
-                                          child: Text("A",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
-                                          ),
-                                          child: Text("R",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
-                                          ),
+                                            ),
                                           child: Text("P",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFF0e7bc5),
-                                              borderRadius: BorderRadius.circular(5)
+                                          style: GoogleFonts.poppins(
+                                              color: Colors.white,
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("R",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
+                                           const SizedBox(width: 5,),
+                                              Container(
+                                                padding: const EdgeInsets.all(5),
+                                                decoration: BoxDecoration(
+                                                    color: const Color(0xFF0e7bc5),
+                                                    borderRadius: BorderRadius.circular(5)
+                                                ),
+                                                child: Text(" I ",
+                                                  style: GoogleFonts.poppins(
+                                                      color: Colors.white,
+                                                      fontSize: 15,
+                                                      fontWeight: FontWeight.bold),),
+                                              ),
+                                          const SizedBox(width: 5,),
+                                              Container(
+                                                padding: const EdgeInsets.all(5),
+                                                decoration: BoxDecoration(
+                                                    color: const Color(0xFFd41f21),
+                                                    borderRadius: BorderRadius.circular(5)
+                                                ),
+                                                child: Text("Y",
+                                                  style: GoogleFonts.poppins(
+                                                      color: Colors.white,
+                                                      fontSize: 15,
+                                                      fontWeight: FontWeight.bold),),
+                                              ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                                padding: const EdgeInsets.all(5),
+                                                decoration: BoxDecoration(
+                                                    color: const Color(0xFF0e7bc5),
+                                                    borderRadius: BorderRadius.circular(5)
+                                                ),
+                                                child: Text("U",
+                                                  style: GoogleFonts.poppins(
+                                                      color: Colors.white,
+                                                      fontSize: 15,
+                                                      fontWeight: FontWeight.bold),),
+                                              ),
+                                          const SizedBox(width: 5,),
+                                              Container(
+                                                padding: const EdgeInsets.all(5),
+                                                decoration: BoxDecoration(
+                                                    color: const Color(0xFFd41f21),
+                                                    borderRadius: BorderRadius.circular(5)
+                                                ),
+                                                child: Text("S",
+                                                  style: GoogleFonts.poppins(
+                                                      color: Colors.white,
+                                                      fontSize: 15,
+                                                      fontWeight: FontWeight.bold),),
+                                              ),
+                                          const SizedBox(width: 5,),
+                                              Container(
+                                                padding: const EdgeInsets.all(5),
+                                                decoration: BoxDecoration(
+                                                    color: const Color(0xFF0e7bc5),
+                                                    borderRadius: BorderRadius.circular(5)
+                                                ),
+                                                child: Text("H",
+                                                  style: GoogleFonts.poppins(
+                                                      color: Colors.white,
+                                                      fontSize: 15,
+                                                      fontWeight: FontWeight.bold),),
+                                              ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("K",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("A",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFF0e7bc5),
-                                              borderRadius: BorderRadius.circular(5)
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFF0e7bc5),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("U",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("A",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("M",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("J",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFF0e7bc5),
-                                              borderRadius: BorderRadius.circular(5)
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFF0e7bc5),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("A",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("A",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("R",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("P",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFF0e7bc5),
-                                              borderRadius: BorderRadius.circular(5)
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("P",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("A",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFF0e7bc5),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("R",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("T",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
-                                        const SizedBox(width: 5,),
-                                        Container(
-                                          padding: const EdgeInsets.all(5),
-                                          decoration: BoxDecoration(
-                                              color: const Color(0xFFd41f21),
-                                              borderRadius: BorderRadius.circular(5)
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("A",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
                                           ),
-                                          child: Text("I",
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold),),
-                                        ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFF0e7bc5),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("A",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
+                                          ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("J",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
+                                          ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFF0e7bc5),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("A",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
+                                          ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("P",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
+                                          ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFF0e7bc5),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("A",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
+                                          ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("T",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
+                                          ),
+                                          const SizedBox(width: 5,),
+                                          Container(
+                                            padding: const EdgeInsets.all(5),
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xFFd41f21),
+                                                borderRadius: BorderRadius.circular(5)
+                                            ),
+                                            child: Text("I",
+                                              style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold),),
+                                          ),
 
-                                      ],
-                                    )))
-                                       ],
-                                     ),
-                                   ],
-                                 ),
+                                        ],
+                                      )))
+                                         ],
+                                       ),
+                                     ],
+                                   ),
 
 
+            ),
           )]),
+
         RotatedBox(
 
             quarterTurns: 1,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+
               children: [
+
                 // Image.asset("assets/images/dragon.png",width: 30,),
 
                 Text("  10:21   ",

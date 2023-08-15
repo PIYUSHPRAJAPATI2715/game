@@ -21,7 +21,7 @@ class _SignInPageState extends State<SignInPage> {
   final formKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-
+  Rx<RxStatus> statusOfLogin = RxStatus.empty().obs;
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -183,20 +183,17 @@ const SizedBox(height: 50,),
                             .trim(),
                         context: context)
                         .then((value) async {
-
-                        SharedPreferences pref = await SharedPreferences.getInstance();
-                        pref.setString('cookie', value.authToken.toString());
-                        // SharedPreferences pref = await SharedPreferences.getInstance();
-                        // pref.setString('cookie', jsonEncode(value.authToken));
-                        // pref.setInt('role', value.data!.isDoctor);
-                        Get.toNamed(MyRouters.firstPage);
-
-
-                      print(value.message.toString());
-
-                      showToast(
-                          value.message.toString());
-                    });
+    if (value.status == true) {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.setString('cookie', value.authToken.toString());
+    Get.offAllNamed(MyRouters.firstPage);
+    statusOfLogin.value = RxStatus.success();
+    showToast(value.message.toString());
+    } else {
+    statusOfLogin.value = RxStatus.error();
+    showToast(value.message.toString());
+    }
+    });
                   }
 
 
